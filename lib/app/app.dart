@@ -17,9 +17,12 @@ class _StoreAppState extends State<StoreApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter Demo Home Page'),
+          title: const Text(
+            'Flutter Demo Home Page',
+          ),
         ),
       ),
     );
