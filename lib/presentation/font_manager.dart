@@ -4,7 +4,7 @@ class FontFamilys {
   static const String fontFamily = "Montserrat";
 }
 
-class FontWeightManager { 
+class FontWeightManager {
   static const FontWeight light = FontWeight.w300;
 
   static const FontWeight bold = FontWeight.w700;
@@ -23,6 +23,8 @@ class FontSize {
 
   static const double s16 = 16.0;
 
+  static const double s17 = 17.0;
+  
   static const double s18 = 18.0;
 
   static const double s20 = 20.0;

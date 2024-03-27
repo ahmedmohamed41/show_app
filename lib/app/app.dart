@@ -1,27 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/presentation/theme_manager.dart';
 
-class StoreApp extends StatefulWidget {
+class ShowApp extends StatefulWidget {
   // named constructor
-  StoreApp._internal();
+  ShowApp._internal();
 
-  static final StoreApp _instance = StoreApp._internal();
+  static final ShowApp _instance = ShowApp._internal();
 
-  factory StoreApp() => _instance;
+  factory ShowApp() => _instance;
 
   @override
-  State<StoreApp> createState() => _StoreAppState();
+  State<ShowApp> createState() => _ShowAppState();
 }
 
-class _StoreAppState extends State<StoreApp> {
+class _ShowAppState extends State<ShowApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: getApplicationTheme(),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
             'Flutter Demo Home Page',
+          ),
+        ),
+        body: SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: const Text('LOGIN'),
+              ),
+            ],
           ),
         ),
       ),
