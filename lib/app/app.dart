@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/presentation/theme_manager.dart';
+import 'package:store_app/presentation/resources/theme_manager.dart';
 
 class ShowApp extends StatefulWidget {
   // named constructor
