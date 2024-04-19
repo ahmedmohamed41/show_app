@@ -3,6 +3,7 @@ import 'package:store_app/presentation/details/details_screen.dart';
 import 'package:store_app/presentation/forget_password/forget_password_screen.dart';
 import 'package:store_app/presentation/home/home_screen.dart';
 import 'package:store_app/presentation/login/login_screen.dart';
+import 'package:store_app/presentation/onbording/onbording_screen.dart';
 import 'package:store_app/presentation/register/register_screen.dart';
 import 'package:store_app/presentation/resources/String_manager.dart';
 import 'package:store_app/presentation/splash/splash_screen.dart';
@@ -14,6 +15,7 @@ class Routes {
   static const String homeRoute = "home";
   static const String detailsRoute = "details";
   static const String forgetPasswordRoute = "forgetPassword";
+  static const String onboardingRoute = "onboarding";
 }
 
 class RouteGenerator {
@@ -29,6 +31,8 @@ class RouteGenerator {
         return navigatorpage(screen: const ForgetPasswordScreen());
       case Routes.homeRoute:
         return navigatorpage(screen: const HomeScreen());
+         case Routes.onboardingRoute:
+        return navigatorpage(screen:const OnBoardingScreen());
       case Routes.detailsRoute:
         return navigatorpage(screen: const DetailsScreen());
       default:

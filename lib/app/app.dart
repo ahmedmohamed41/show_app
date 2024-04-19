@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/presentation/resources/routes_manager.dart';
 import 'package:store_app/presentation/resources/theme_manager.dart';
 
 class ShowApp extends StatefulWidget {
@@ -20,27 +21,8 @@ class _ShowAppState extends State<ShowApp> {
     return MaterialApp(
       theme: getApplicationTheme(),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Flutter Demo Home Page',
-          ),
-        ),
-        body: SizedBox(
-          height: double.infinity,
-          width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextButton(
-                onPressed: () {},
-                child: const Text('LOGIN'),
-              ),
-            ],
-          ),
-        ),
-      ),
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
     );
   }
 }

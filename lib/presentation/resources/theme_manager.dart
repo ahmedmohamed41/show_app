@@ -12,7 +12,7 @@ ThemeData getApplicationTheme() {
     primaryColorDark: ColorManager.darkPrimary,
     disabledColor: ColorManager.grey1,
     splashColor: ColorManager.lightPrimary,
-
+    
     // cardView theme
     cardTheme: CardTheme(
       color: ColorManager.white,
@@ -57,9 +57,9 @@ ThemeData getApplicationTheme() {
           getBoldStyle(color: ColorManager.white, fontSize: FontSize.s22),
       titleMedium:
           getMediumStyle(color: ColorManager.lightGrey, fontSize: FontSize.s14),
-      titleLarge: getSemiBoldStyle(
+      headlineLarge: getSemiBoldStyle(
           color: ColorManager.darkGrey, fontSize: FontSize.s16),
-      titleSmall: getRegularStyle(color: ColorManager.grey1),
+      bodyLarge: getRegularStyle(color: ColorManager.grey1),
       bodySmall: getRegularStyle(color: ColorManager.grey),
     ),
 
@@ -73,7 +73,8 @@ ThemeData getApplicationTheme() {
       errorStyle:
           getRegularStyle(color: ColorManager.error, fontSize: AppMargin.m14),
       enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+        borderSide:
+            BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
       focusedBorder: OutlineInputBorder(
@@ -85,7 +86,8 @@ ThemeData getApplicationTheme() {
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
       focusedErrorBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+        borderSide:
+            BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
     ),
